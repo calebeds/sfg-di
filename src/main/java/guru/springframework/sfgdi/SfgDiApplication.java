@@ -1,6 +1,7 @@
 package guru.springframework.sfgdi;
 
 import guru.springframework.sfgdi.config.CalebeConfiguration;
+import guru.springframework.sfgdi.config.CalebeConstructorConfig;
 import guru.springframework.sfgdi.controllers.*;
 import guru.springframework.sfgdi.datasource.FakeDataSource;
 import guru.springframework.sfgdi.services.PrototypeBean;
@@ -62,6 +63,11 @@ public class SfgDiApplication {
 		System.out.println(calebeConfiguration.getPassword());
 		System.out.println(calebeConfiguration.getJdbcurl());
 
+		System.out.println("----------------- Constructor Binding");
+		CalebeConstructorConfig calebeConstructorConfig = ctx.getBean(CalebeConstructorConfig.class);
+		System.out.println(calebeConstructorConfig.getUsername());
+		System.out.println(calebeConstructorConfig.getPassword());
+		System.out.println(calebeConstructorConfig.getJdbcurl());
 	}
 
 }
