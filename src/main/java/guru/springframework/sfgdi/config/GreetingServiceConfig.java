@@ -1,7 +1,5 @@
 package guru.springframework.sfgdi.config;
 
-import com.springframework.pets.CatService;
-import com.springframework.pets.DogService;
 import com.springframework.pets.PetService;
 import com.springframework.pets.PetServiceFactory;
 import guru.springframework.sfgdi.datasource.FakeDataSource;
@@ -11,7 +9,6 @@ import guru.springframework.sfgdi.services.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
-@PropertySource("classpath:datasource.properties")
 @ImportResource("classpath:sfgdi-config.xml")
 @Configuration
 public class GreetingServiceConfig {
