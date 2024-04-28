@@ -1,0 +1,4 @@
+calebe:
+  username: DevDBUser
+  password: DevPassword
+  jdbcurl: DevUrlForDb

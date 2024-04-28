@@ -1,0 +1,4 @@
+calebe:
+  username: QADBUser
+  password: QAPassword
+  jdbcurl: QAUrlForDb
