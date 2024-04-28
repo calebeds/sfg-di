@@ -1,5 +1,6 @@
 package guru.springframework.sfgdi;
 
+import guru.springframework.sfgdi.config.CalebeConfiguration;
 import guru.springframework.sfgdi.controllers.*;
 import guru.springframework.sfgdi.datasource.FakeDataSource;
 import guru.springframework.sfgdi.services.PrototypeBean;
@@ -55,6 +56,11 @@ public class SfgDiApplication {
 		System.out.println(fakeDataSource.getPassword());
 		System.out.println(fakeDataSource.getJdbcurl());
 
+		System.out.println("--------------- Config Props Bean");
+		CalebeConfiguration calebeConfiguration = ctx.getBean(CalebeConfiguration.class);
+		System.out.println(calebeConfiguration.getUsername());
+		System.out.println(calebeConfiguration.getPassword());
+		System.out.println(calebeConfiguration.getJdbcurl());
 
 	}
 
